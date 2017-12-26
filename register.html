@@ -1,0 +1,238 @@
+
+<html lang="en">
+<head>
+  <title>Registration page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+   
+      
+      <a class="navbar-brand" href="#">Lendi Library</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">      
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user-plus"></i> Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-sign-in-alt"></i> Sign In</a></li>
+		<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-envelope"></i> Contact Us</a></li>
+      </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+<div  style="background:transparent !important" class="jumbotron-fluid">
+		
+	 <img src="http://peachva.org/site/peach-content/uploads/2017/04/lending_library-600x289.png" class="img-rounded" alt="LL image" width="200" height="150"> 
+</div>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <!--<a class="navbar-brand" href="#">Lendi</a>-->
+	<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Browse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">How it Works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Our Plans</a>
+      </li>
+	  
+    </ul>
+	
+	 <form class="form-inline my-2 my-lg-0 ml-auto">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</nav>
+</div>
+
+
+<div class="container">
+    <form  name = "myForm" class="form-horizontal" role="form" method="POST" action="/register">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1>Sign Up</h1>
+                <hr>
+            </div>
+        </div>
+		
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="name">Full Name</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                        <input type="text" name="name" class="form-control" id="name"
+                               placeholder="Govind Daga" required autofocus>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="email">E-Mail Address</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                        <input type="text" name="email" class="form-control" id="email"
+                               placeholder="you@example.com" required autofocus>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="password">Password</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                        <input type="password" name="password" class="form-control" id="password"
+                               placeholder="Password" required>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="password">Confirm Password</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem">
+                            <i class="fa fa-key"></i>
+                        </div>
+                        <input type="password" name="password-confirmation" class="form-control"
+                               id="password-confirm" placeholder="Password" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="">Phone Number</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <input type="number" name="Mobile Number" class="form-control"
+                               id="number" placeholder="9876543210" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="">PinCode</label>
+            </div>
+            <div class="col-md-6 ">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem">
+                            <i class="fa fa-thumbtack"></i>
+                        </div>
+                        <input type="number" name="PinCode" class="form-control"
+                               id="pincode" placeholder="535001" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="">Gender</label>
+            </div>
+		<div class="col-md-6 form-group">
+     
+      <select class="form-control" id="sel1"  required>
+        <option disabled selected>---Select One---</option>
+		<option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+        <option>Rather not Say</option>
+      </select>
+	  </div>
+	  </div>
+	  
+	  <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="">Date of Birth</label>
+            </div>
+	  <div class="col-md-6 form-group">
+      <input type="date" class="form-control" id="InputDOB" placeholder="Date of Birth">
+    </div>
+	</div>
+	
+	<div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="">City</label>
+            </div>
+		<div class="col-md-6 form-group">
+      <select class="form-control" id="sel1">
+        <option>Vishakapatanam</option>
+        <option>Vizianagaram</option >
+        
+      </select>
+	  </div>
+	  </div>
+	  
+		
+		<div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="">Address</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                   <textarea class="form-control" rows="4" id="Address"></textarea>
+                </div>					   
+            </div>
+        </div>
+		<br/>
+		
+		 <div class=" col field-label-responsive text-center">
+		<div class="checkbox">
+     <label><input type="checkbox" value=""> I accept the Terms and Condition</label>
+    </div>
+	  </div>
+	  <br/>
+	
+		
+         
+		
+		
+		
+	<button class="btn  btn-primary btn-block" type="submit">Sign Up</button>
+		
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
