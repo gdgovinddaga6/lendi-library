@@ -1,0 +1,48 @@
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.btn-google-plus {
+    color: #fff;
+    background-color: #DD4B39;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.btn-twitter {
+    color: #fff;
+    background-color: #55ACEE;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.btn-social {
+    position: relative;
+    padding-left: 44px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-social:hover {
+    color: #eee;
+}
+
+.btn-social :first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    padding: 7px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+a {
+    line-height: 1em;
+    text-decoration: none;
+    padding: 120px;
+    margin: 80px;
+}
